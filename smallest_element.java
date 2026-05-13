@@ -1,7 +1,16 @@
+import java.util.Scanner;
+
 public class smallest_element {
     public static void main(String args[]) {
-        int[] arr = {2,5,7,8,9,1};
+        int[] arr1 = {2, 5, 1, 3, 0};
 
+        int result = smallestElement(arr1);
+
+        System.out.println("Smallest element is: " + result);
+
+    
+    }
+    public static int smallestElement(int[] arr) {
         int smallest = arr[0];
 
         for(int i = 0; i < arr.length; i++){
@@ -10,6 +19,9 @@ public class smallest_element {
             }
         }
 
-        System.out.println("smallest no is : "+ smallest);
+        return smallest;
+
+    
     }
+    
 }
